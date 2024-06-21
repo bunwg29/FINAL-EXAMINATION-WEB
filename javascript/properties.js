@@ -5,7 +5,7 @@ const properties = [
     name: "Phòng trọ Anh Đạt",
     image: "./assets/nhatro/nguhoanhson/Tro 1/pic2.jpg",
     price: "2.700.000 VNĐ",
-    link: "https://www.facebook.com/groups/baohoxemay/permalink/6713024822134117/",
+    link: "./tro1.html",
     address: "Khu đô thị FPT - Quận Ngũ Hành Sơn",
     rooms: 1,
     bathrooms: 1,
