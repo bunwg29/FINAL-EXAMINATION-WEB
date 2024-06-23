@@ -153,7 +153,7 @@ const properties = [
   },
   {
     name: "Phòng trọ Quốc Thịnh",
-    image: "./assets/nhatro/haichau/pic-1.jpg",
+    image: "./assets/nhatro/haichau/tro 2/pic-3.jpg",
     price: "4.500.000 VNĐ",
     link: "./motel-Room-Details/haichau/tro1.html",
     address: "37/7 Tiểu La, Hải Châu",
