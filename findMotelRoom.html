@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHome - Nhà trọ Đà Nẵng</title>
+
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 
+      - #HEADER
+    -->
+
+    <header class="header" data-header>
+        <div class="overlay" data-overlay></div>
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-top-list">
+                    <li>
+                        <a href="" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>SHome@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>VKU</address>
+                        </a>
+                    </li>
+                </ul>
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="header-top-btn">Danh sách</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="logo">
+                    <span>S</span>Home
+                </div>
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <div class="logo">
+                            <span>S</span>Home
+                        </div>
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+                            <li>
+                                <a href="./index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="navbar-link" data-nav-link>Chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="#service" class="navbar-link" data-nav-link>Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="#property" class="navbar-link" data-nav-link>Đánh giá</a>
+                            </li>
+                            <li>
+                                <a href="#blog" class="navbar-link" data-nav-link>Bài viết</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="navbar-link" data-nav-link>Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-bottom-actions">
+                    <button class="header-bottom-actions-btn" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <span>Search</span>
+                    </button>
+                    <button class="header-bottom-actions-btn" aria-label="Profile">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span>Profile</span>
+                    </button>
+                    <button class="header-bottom-actions-btn" aria-label="Cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span>Cart</span>
+                    </button>
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="search">
+                <div class="container">
+                    <select id="district-select">
+                        <option value="">Chọn Quận</option>
+                        <option value="Ngũ Hành Sơn">Ngũ Hành Sơn</option>
+                        <option value="Sơn Trà">Sơn Trà</option>
+                        <option value="Hải Châu">Hải Châu</option>
+                        <option value="Cẩm Lệ">Cẩm Lệ</option>
+                        <option value="Liên Chiểu">Liên Chiểu</option>
+                        <option value="Thanh Khê">Thanh Khê</option>
+                    </select>
+
+                    <select id="price-range">
+                        <option value="">Chọn Mức Giá</option>
+                        <option value="1">Dưới 2 triệu</option>
+                        <option value="2">Từ 2 - 3 triệu</option>
+                        <option value="3">Từ 3 - 5 triệu</option>
+                        <option value="4">Trên 5 triệu</option>
+                    </select>
+
+                    <button id="search-button">Tìm kiếm</button>
+                </div>
+            </section>
+
+            <section class="property" id="property">
+                <div class="container">
+                    <ul class="property-list has-scrollbar" id="property-list-all">
+                        </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- 
+      FOOTER
+    -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span>S</span>Home
+                    </div>
+                    <p class="section-text">
+                        Sự uy tín tạo nên thương hiệu, chúng tôi đã mang lại sự trải nghiệm đáng nhớ cho hàng ngàn sinh viên ở
+                        thành phố Đà Nẵng.
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="#" class="contact-link">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address>VKU</address>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+0123456789" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <span>0907506231</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@homeverse.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <span>shome@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-link-box">
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Công ty</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Bài viết</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Nguồn trọ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Địa chỉ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Dịch vụ</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Thuê phòng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Tìm phòng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Đăng phòng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Cá nhân</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Điều khoản dịch vụ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Chăm sóc khách hàng</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Trao đổi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Lợi ích</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Bảo mật</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    © 2024 <a href="#">Shome</a>. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/properties.js" defer></script>
+    <script type="module" src="./javascript/findRoom.js" defer></script>
+
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
