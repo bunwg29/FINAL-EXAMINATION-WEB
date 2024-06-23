@@ -22,9 +22,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -75,7 +73,7 @@
               </a>
             </li>
           </ul>
-          <button class="header-top-btn">Danh sách</button>
+          <button class="header-top-btn" onclick="confirmLogout()">Đăng xuất</button>
         </div>
       </div>
     </div>
@@ -154,7 +152,7 @@
             <p class="hero-text">
               Websites hàng đầu về cung cấp nhà trọ ở Đà Nẵng
             </p>
-            <button class="btn">Tìm nhà trọ ngay</button>
+           <a href="#property"><button class="btn">Tìm nhà trọ ngay</button></a> 
           </div>
           <figure class="hero-banner">
             <img src="./assets/images/main-hero.png" alt="" class="w-100">
@@ -689,6 +687,7 @@
   -->
   <script src="./javascript/properties.js" defer></script>
   <script type="module" src="./javascript/loadDataOnHomePage.js" defer></script>
+  <script src="./javascript/signout.js"></script>
 
   <!-- 
     - ionicon link
